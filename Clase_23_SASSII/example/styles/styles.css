@@ -1,0 +1,70 @@
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+main .box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.button, .error {
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 12px 24px;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover, .error:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgb(0, 0, 0);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.success {
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 12px 24px;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  font-weight: bold;
+  color: #27ae60;
+}
+.success:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgb(0, 0, 0);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.warning {
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 12px 24px;
+  transition: all 0.3s ease-in-out;
+  font-size: 22px;
+  font-weight: bold;
+  color: #f39c12;
+  /* @extend .button;
+  font-size: 22px;
+  color: $warningColor;
+  font-weight: bold; */
+}
+.warning:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px rgb(0, 0, 0);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.error {
+  font-size: 26px;
+  color: #c0392b;
+  font-weight: bold;
+}/*# sourceMappingURL=styles.css.map */

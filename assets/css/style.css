@@ -1,0 +1,180 @@
+.banner, .navbar {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.nav-items ul li a {
+  transition: all 0.4s ease-in-out;
+}
+.nav-items ul li a:hover {
+  color: #92f7f2;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 0 5rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-items ul {
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+}
+.nav-items ul li {
+  list-style-type: none;
+}
+.banner {
+  background-image: url(../img/wireframe.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.banner-content {
+  max-width: 475px;
+  padding: 3.5rem 0 0 0;
+}
+.banner-content h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+  margin: 0;
+  position: relative;
+}
+.banner-content h2::before {
+  background-color: #03faee;
+  content: "";
+  height: 42px;
+  left: -1px;
+  position: absolute;
+  width: 215px;
+  z-index: -1;
+}
+.banner-content p {
+  color: #8b8b8b;
+  line-height: 2rem;
+  margin: 1.5rem 0;
+}
+
+.banner-buttons button {
+  background-color: #03faee;
+  border: 1px dashed;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+  transition: all 0.4s ease-in-out;
+}
+.banner-buttons button:hover {
+  background-color: #f8f8f8;
+  border-color: #03faee;
+}
+
+.cards {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 3rem 0 5rem 0;
+}
+.cards section {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  flex-basis: 300px;
+}
+
+.card-header {
+  padding: 1rem;
+}
+.card-header span {
+  align-items: center;
+  border: solid 1px #000;
+  border-radius: 50%;
+  box-shadow: -3px 0px 0px 1px #03faee;
+  -webkit-box-shadow: -3px 0px 0px 1px #03faee;
+  -moz-box-shadow: -3px 0px 0px 1px #03faee;
+  display: inline-flex;
+  height: 35px;
+  justify-content: center;
+  width: 35px;
+}
+
+.card-body {
+  padding: 0 1.5rem 3.5rem;
+}
+.card-body h5 {
+  font-size: 1.1rem;
+  margin: 0 0 0.2rem 0;
+  position: relative;
+  z-index: 1;
+}
+.card-body h5::before {
+  background-color: #03faee;
+  content: "";
+  height: 10px;
+  position: absolute;
+  width: 18px;
+  z-index: -1;
+}
+.card-body p {
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 2rem;
+}
+.footer-social ul li {
+  list-style-type: none;
+}
+.footer-social ul li a {
+  align-items: center;
+  border: solid 1px transparent;
+  border-radius: 50%;
+  box-shadow: -3px 0px 0px 1px #03faee;
+  -webkit-box-shadow: -3px 0px 0px 1px #03faee;
+  -moz-box-shadow: -3px 0px 0px 1px #03faee;
+  display: inline-flex;
+  height: 35px;
+  justify-content: center;
+  width: 35px;
+  transition: all 0.4s ease-in-out;
+}
+.footer-social ul li a img {
+  height: 50%;
+  width: 50%;
+}
+.footer-social ul li a:hover {
+  box-shadow: 3px 0px 0px 1px #03faee;
+  -webkit-box-shadow: 3px 0px 0px 1px #03faee;
+  -moz-box-shadow: 3px 0px 0px 1px #03faee;
+}/*# sourceMappingURL=style.css.map */

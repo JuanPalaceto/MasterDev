@@ -1,0 +1,51 @@
+@import "variables";
+@import "mixin";
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-evenly;
+
+  .box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
+}
+
+.button {
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 12px 24px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $primaryColor;
+    box-shadow: 0 5px 10px $secondaryColor;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.success {
+  @include myButton(18px, $successColor);
+}
+
+.warning {
+  @include myButton(22px, $warningColor);
+
+  /* @extend .button;
+  font-size: 22px;
+  color: $warningColor;
+  font-weight: bold; */
+}
+
+.error {
+  @extend .button;
+  font-size: 26px;
+  color: $dangerColor;
+  font-weight: bold;
+}

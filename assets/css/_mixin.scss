@@ -1,0 +1,17 @@
+@mixin myButton($fsize, $color, $fweight: bold) {
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  padding: 12px 24px;
+  transition: all 0.3s ease-in-out;
+  font-size: $fsize;
+  font-weight: $fweight;
+  color: $color;
+
+  &:hover {
+    background-color: $primaryColor;
+    box-shadow: 0 5px 10px $secondaryColor;
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
